@@ -21,17 +21,17 @@ class NestedScrollDemoPage extends StatelessWidget {
           <Widget>[
             SliverOverlapAbsorber(
               handle: NestedScrollView.sliverOverlapAbsorberHandleFor(context),
-              child: SliverAppBar(
-                pinned: true,
-                title: Text('NestedScroll Demo'),
-                expandedHeight: 200.0,
-                flexibleSpace: FlexibleSpaceBar(background: Image.asset(
-                    'images/timg.jpg', fit: BoxFit.cover)),
-                bottom:TabBar(
-                  tabs:_tabs.map((tab) => Text(tab,style:  TextStyle(fontSize: 18.0))).toList(),
-                ),
-                forceElevated: innerScrolled,
-              ),
+//              child: SliverAppBar(
+//                pinned: true,
+//                title: Text('NestedScroll Demo'),
+//                expandedHeight: 200.0,
+//                flexibleSpace: FlexibleSpaceBar(background: Image.asset(
+//                    'images/timg.jpg', fit: BoxFit.cover)),
+//                bottom:TabBar(
+//                  tabs:_tabs.map((tab) => Text(tab,style:  TextStyle(fontSize: 18.0))).toList(),
+//                ),
+//                forceElevated: innerScrolled,
+//              ),
             )
           ],
           body:TabBarView(
